@@ -1,0 +1,3 @@
+( numero n1 )
+( numero n2 )
+( = n1 1 )

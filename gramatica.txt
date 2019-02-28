@@ -1,0 +1,7 @@
+<programa> ::= <comandos>
+<comandos> ::= "(" <comando> ")" | "(" <comando> ")" <comandos>
+<comando> ::=  <atribuicao> | <declaracao>
+<atribuicao> ::= "=" <id> <valor>
+<declaracao> ::= <tipo> <id>
+<tipo> ::= "numero"
+<valor> ::= [0-9]

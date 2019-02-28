@@ -1,0 +1,22 @@
+{
+  "name": "compilador",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "enum": "^2.5.0",
+    "fs": "0.0.1-security"
+  }
+}
