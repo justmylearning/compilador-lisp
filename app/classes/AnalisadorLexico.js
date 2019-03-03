@@ -82,7 +82,7 @@ module.exports = class AnalisadorLexico{
         TabelaDeTokensClass.getTabela().map((token) => {
             token.classe = classificadorDeToken.classificar(token);
             if(token.classe == classificadorDeToken.classesEnum.get('ID')){
-                let simbolo = new SimboloClass(-1, token.imagem);
+                let simbolo = new SimboloClass(undefined, token.imagem);
                 simbolo = tabelaDeSimbolosClass.adicionarSimbolo(simbolo);
                 token.indiceTabelaDeSimbolos = simbolo.indice;
             }

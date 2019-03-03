@@ -5,8 +5,10 @@ module.exports = class TabelaDeSimbolos{
     static adicionarSimbolo(simbolo){
         let simboloExistente = false;
         TabelaDeSimbolos.simbolos.map((simboloItem) => {
-            if(simboloItem.imagem == simbolo.imagem)
+            if(simboloItem.imagem == simbolo.imagem){
                 simboloExistente = true;
+                simbolo.indice = simboloItem.indice;
+            }
         });
         if(!simboloExistente){
             simbolo.indice = TabelaDeSimbolos.indice;
